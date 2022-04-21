@@ -1,0 +1,13 @@
+
+**Web server**
+    - This will hold a Asymm publickey
+    - When a Client connect to the web server, it will send the public key
+
+**Client X**
+    - When the client receive this key , they will generate at Symm key
+    - The Asymm from the server will be used to encrypt the clients Symm key and send back
+
+
+** Web server **
+    - The Web server will hold a record of each client's key , to make sure that tge connection between them are secure
+    - Each time a msg is received from a client , the web server wil decrypt it and send it to each client with the respected encryption.
